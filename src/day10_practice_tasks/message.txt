@@ -1,0 +1,108 @@
+                    Wrapper Classes
+
+Wrapper Classes: dedicated classes for each primitive data types that coverts it into objects.
+-Imported automatically/by default.
+-Immutable
+-For each 8 primitive data types there are 8 wrapper classes
+
+                Purposes of Wrapper Classes
+-It converts prim.d.t. into objects because data structures such as Java collections,
+generics do not support PDT
+-Provides useful methods for converting, parsing, etc
+-To have constants for the max and min values of the corresponding PDT
+-To allow null values
+
+            Creating the Wrapper Class
+ -valueOf() method creates a Wrapper Object for a given primitive or String
+ -case insensitive
+ -valueOf() method is a method provided by wrapper classes that are
+  associated with PDT. Wrapper classes are used to represent
+  PDT as objects
+ -valueOf() method is used to convert PDT or string representation of the data into an object
+ of the corresponding wrapper class
+
+
+ -not recommended but can be created by the new keyword (deprecated since Java9)
+ *deprecated- particular feature or method is no longer recommended for use
+
+                    AUTOBOXING & UNBOXING
+  -autoboxing is a process of automatically converting a PDT into a wrapper object
+  -unboxing is a process of automatically converting wrapper class into a PDT
+  -both simplify the code by eliminating the need of manual conversion
+  -both done implicitly, so that we dont have to use any casting operators
+
+                    PARSING VALUES
+  -parsing is the process of converting a textual representation of data into its corresponding
+  PDA
+  -Parsing in Java typically involves converting data from one format or type to another.
+  -is commonly done when reading input from users, files, or external systems, where the data
+   might be represented as strings or in a different format than what your program expects.
+
+                       Differences between primitives and objects
+
+
+ how they are stored, how they behave, and how they are manipulated in memory.
+
+Data Type:
+Primitive Types: These are the basic data types provided by the programming language. Examples include int, float, char, boolean, etc. They store simple values and are directly manipulated by the CPU.
+Object Types: These are instances of classes or data structures that are created based on user-defined or built-in classes. Objects encapsulate data and behavior and are more complex than primitives.
+
+Memory Storage:
+Primitive Types: They directly store the actual value in memory.
+Object Types: Objects are stored as references (memory addresses) to the actual data stored elsewhere in the heap.
+
+Default Values:
+Primitive Types: They have default values even if you don't explicitly initialize them (e.g., 0 for numeric types, false for boolean).
+Object Types: If an object is not explicitly initialized, its reference will be null by default.
+
+Size:
+Primitive Types: They generally take less memory compared to objects.
+Object Types: Objects have additional overhead due to their structure and the memory required for the reference.
+
+Behavior:
+Primitive Types: They represent simple, atomic values and have no methods associated with them.
+Object Types: Objects encapsulate both data (attributes) and behavior (methods) within a single unit.
+
+Immutability:
+Primitive Types: They are usually immutable, meaning their values cannot be changed after they are created.
+Object Types: Objects may or may not be immutable, depending on their class implementation.
+Pass-by-Value vs. Pass-by-Reference:
+Primitive Types: They are typically passed by value, meaning a copy of the actual value is passed to methods or assigned to other variables.
+Object Types: The reference to the object is passed by value, so changes to the object's state
+can be seen outside the method, but the reference itself cannot be modified.
+
+                Methods & Constants of Wrapper Classes
+Character class is a part of the java.lang package and serves as a wrapper class for PDT char.
+It provides several utility methods to work with characters.
+
+key aspects of the Character class:
+
+Wrapper Class:
+Character is a wrapper class that allows you to treat the PDT char as an object.
+
+Utility Methods:
+
+isDigit(char ch): Determines if the specified character is a digit.
+isLetter(char ch): Determines if the specified character is a letter.
+isUpperCase(char ch): Determines if the specified character is an uppercase letter.
+isLowerCase(char ch): Determines if the specified character is a lowercase letter.
+isWhitespace(char ch): Determines if the specified character is a whitespace character.
+
+Constants:
+MAX_VALUE: The maximum value of a char ('\uFFFF').
+MIN_VALUE: The minimum value of a char ('\u0000').
+
+Conversion Methods:
+charValue(): Returns the primitive char value of this Character object.
+toString(char ch): Returns a string representation of the character argument.
+
+Unicode Support:
+As char represents a 16-bit Unicode character, the Character class is closely tied to Unicode character encoding.
+
+                Collections Utility Class
+ -is a utility class do not confuse with collection interface
+ -Coll.interface is used as a data structure, it is the interface that arraylist classes are implementing
+ but this coll.util.class which contains static methods that can be applied to collection such as ArrayList
+
+ NOTES:
+ 1) if the return type is void we do not need to assign any variables to it, simply print it
