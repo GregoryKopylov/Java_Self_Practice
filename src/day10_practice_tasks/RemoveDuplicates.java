@@ -23,6 +23,23 @@ public class RemoveDuplicates {
 }
 
 /*
+Another sample of resolving this task
+
+        ArrayList <Integer> list = new ArrayList<>(Arrays.asList(1,1,2,2,3,3,4,4,5,6,7));
+
+        for (int i = 0; i < list.size(); i++) {
+
+            int element = list.get(i);
+            //System.out.println(element);
+            int freq = Collections.frequency(list,i);
+            if (freq>1){
+                list.remove(i);
+            }
+        }
+        System.out.println(list);
+ */
+
+/*
 8. Create a class called RemoveDuplicates and write a program with the following specifications:
    8.1 Given an ArrayList of integers, remove duplicated numbers.
 
